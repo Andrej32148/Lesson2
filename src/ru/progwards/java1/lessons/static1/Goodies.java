@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.static1;
 
 public class Goodies {
     public static String goodies;
-public static String child;
+    public static String child;
 
     public static void printPresent() {
         System.out.println(
@@ -17,28 +17,29 @@ public static String child;
         goodies = "печеньку";
     }
 
-    public static void setChild(String child){
-Goodies.child=child;
+    public static void setChild(String child) {
+        Goodies.child = child;
     }
+
     public static void setGoodies(String goodies) {
 
 
-Goodies.goodies = goodies;
+        Goodies.goodies = goodies;
     }
 
     public static void printPresents() {
-masha();
-printPresent();
-setGoodies("леденец");
-printPresent();
-cookie();
-printPresent();
-setChild("Пете");
-printPresent();
+        masha();
+        printPresent();
+        setGoodies("леденец");
+        printPresent();
+        cookie();
+        printPresent();
+        setChild("Пете");
+        printPresent();
     }
 
     public static void main(String[] args) {
         printPresent();
-printPresents();
+        printPresents();
     }
 }
